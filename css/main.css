@@ -196,6 +196,104 @@
     transform-origin: left center;
 }
 
+/* Slider Navigasi */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    /* padding-top: 60px; */
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    crusor:pointer;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    color: black;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav-header{
+  height: 10%;
+  background: #ffdb0d;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.sidenav-footer{
+  /* height: 100%; */
+  /* background: #ffdb0d; */
+  margin-top: 22px;
+}
+
+.nav-title{
+  font-size: 15pt;
+  padding-left: 11px;
+  font-weight: 600;
+}
+
+.logo-menu-button{
+  position: absolute;
+  bottom: 20px;
+  left: 22px;
+}
+
+.logo-menu-button img{
+  width: 100px;
+}
+
+.logo-medsos{
+  position: absolute;
+  bottom: 19px;
+  padding: 12px;
+  margin: 10px;
+  color: #555555;
+  right: 0px;
+  font-size: 26pt;
+}
+
+#header-menu-title {
+    position: relative;
+    -moz-box-shadow: 1px 2px 40px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 40px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 40px rgba(0, 0, 0, .5);
+    /* padding: 10px; */
+
+}
+
+#header-menu-title::after {
+    content: '';
+    position: absolute;
+    z-index: -1; /* hide shadow behind image */
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    left: 0%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
+
 
 
 
