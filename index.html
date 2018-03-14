@@ -17,6 +17,19 @@
   <body>
     <!--  Start Hero Section  -->
     <section class="hero">
+
+      <!-- Start Slider -->
+      <div class="mySlides fade">
+        <img src="img/hero.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/hero.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
       <header>
         <div class="row">
           <div class="grid-x">
@@ -95,15 +108,40 @@
       <!--    Start Hero Caption    -->
       <section class="caption">
         <div class="row">
-          <h1 class="mean_cap">Responsive Template</hA>
-          <h2 class="sub_cap">Less Is More.</h2>
-          <a href="#" class="btn_details"><span>More Details</span> <img src="img/btn_arrow.png" alt="" src="" class="arrow"></a>
+          <h1 class="mean_cap">Alumni UI</h1>
+          <h2 class="sub_cap">Makin Asyik Aja.</h2>
+          <!-- <a href="#" class="btn_details"><span>More Details</span> <img src="img/btn_arrow.png" alt="" class="arrow"></a> -->
         </div>
       </section>
       <!--    End Hero Caption    -->
 
     </section>
     <!--  End Hero Section  -->
+
+    <!-- Navigation Slider -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script type="text/javascript">
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {        
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+
+    </script>
+
 
 
 
