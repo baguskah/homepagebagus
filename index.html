@@ -20,14 +20,17 @@
 
       <!-- Start Slider -->
       <div class="mySlides fade">
-        <img src="img/hero.jpg" style="width:100%">
+        <img src="img/hero2.jpg" style="width:100%">
       </div>
       <div class="mySlides fade">
         <img src="img/hero.jpg" style="width:100%">
       </div>
+      <!-- <div class="mySlides fade">
+        <img src="img/hero.jpg" style="width:100%">
+      </div> -->
 
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
 
 
       <header>
@@ -132,7 +135,7 @@
     function showSlides() {
       var i;
       var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {        
+      for (i = 0; i < slides.length; i++) {
       }
       slideIndex++;
       if (slideIndex > slides.length) {slideIndex = 1}
@@ -141,6 +144,82 @@
     }
 
     </script>
+
+    <div class="berita-terakhir">
+      <div class="row">
+        <div class="small-2 columns">
+          <h2 class="up-head-bold">Berita</h2>
+          <h2 class="down-head-bold">Terakhir</h2>
+
+        </div>
+        <div class="small-10 column berita-terakhir-content no-padding">
+          <!-- Content Slider -->
+          <div class="flex-viewport" style="overflow: hidden; position: relative;">
+            <ul class="slides-berita" id="slide-beritanya">
+              <li class="li-slide-berita" >
+                <div class="berita-list" style="position:relative">
+                  <span class="date-berita">18 Maret 2018</span>
+                  <a href="#">
+                    UI MENGGANDENG ADARO SEBAGAI SPONSOR UTAMA UIHM
+                  </a>
+                </div>
+              </li>
+              <li class="li-slide-berita">
+                <div class="berita-list">
+                  <span class="date-berita">32 Juni 2018</span>
+                  <a href="#">
+                    UI MEMBUAT GEBRAKAN BARU MELALUI UIHM YEAS
+                  </a>
+                </div>
+              </li>
+              <li class="li-slide-berita">
+                <div class="berita-list">
+                  <span class="date-berita">32 Juni 2018</span>
+                  <a href="#">
+                    UI MEMBUAT GEBRAKAN BARU MELALUI UIHM HOE
+                  </a>
+                </div>
+              </li>
+              <li class="li-slide-berita">
+                <div class="berita-list">
+                  <span class="date-berita">32 Juni 2018</span>
+                  <a href="#">
+                    UI MEMBUAT GEBRAKAN BARU MELALUI UIHM HAU
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- navigasi -->
+          <ul class="flex-direction-nav">
+
+            <li class="flex-nav-next">
+              <span style="cursor:pointer" id="geserkanan" onclick="geserKanan()" class="flex-prev " href=""></span>
+            </li>
+            <li class="flex-nav-prev">
+              <span style="cursor:pointer; display:none" id="geserkiri" class="flex-next" onclick="geserKiri()" ></span>
+            </li>
+          </ul>
+          <script type="text/javascript">
+            function geserKanan() {
+              $('#slide-beritanya').css('transform','translate3d(-333px,0px,0px)');
+              $('#geserkanan').hide();
+              $('#geserkiri').show();
+            }
+            function geserKiri() {
+              $('#slide-beritanya').css('transform','translate3d(0px,0px,0px)');
+              $('#geserkanan').show();
+              $('#geserkiri').hide();
+            }
+          </script>
+
+
+        </div>
+
+      </div>
+    </div>
+
+
 
 
 

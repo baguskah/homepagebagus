@@ -343,7 +343,7 @@
 
 @media only screen and (min-width: 901px) {
   .hero{
-  	height: 600px;
+  	height: 500px;
   }
 
 
@@ -651,6 +651,122 @@
 
 .top-bar.expanded .toggle-topbar a span::after {
   box-shadow: 0 0 0 1px #fbdd90, 0 7px 0 1px #fbdd90, 0 14px 0 1px #fbdd90;
+}
+
+
+
+/* Berita Terakhir */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+}
+
+
+.berita-terakhir{
+    margin-top: 26px;
+    padding: 17px;
+
+}
+
+.up-head-bold{
+  font-family: "lato-black", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  color: #696969;
+  text-transform: uppercase;
+}
+
+.down-head-bold{
+  font-family: "lato-light", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  color: #696969;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.li-slide-berita {
+  width: 320px;
+  margin-right: 0px;
+  float: left;
+  display: block;
+}
+
+.berita-list .date-berita{
+  color: #666;
+  text-decoration: none;
+  font-family: "lato-light", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  display: block;
+}
+
+.berita-list a{
+    color: #5c5c5c;
+    text-decoration: none;
+    font-family: "lato-black", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    padding-right: 3em;
+    line-height: 1.2em;
+}
+
+.slides-berita{
+  width:1000%;
+  transition-duration: 0.5s;
+  transform:translate3d(0px,0px,0px);
+}
+
+.flex-direction-nav{
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  position: absolute;
+  right: -51px;
+  top: 23px;
+}
+
+
+
+#geserkiri:before{
+    font-family: "FontAwesome";
+    font-size: 50px;
+    display: inline-block;
+    content: '\f104';
+    color: #696969;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    line-height: 1;
+}
+
+#geserkanan:before{
+    font-family: "FontAwesome";
+    font-size: 50px;
+    display: inline-block;
+    content: '\f105';
+    color: #696969;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    line-height: 1;
 }
 
 
