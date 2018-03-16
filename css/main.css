@@ -416,7 +416,15 @@
   }
 
   .hero{
-  	height: 400px;
+  	height: 296px;
+  }
+
+  .hero .caption h1.mean_cap{
+    font-size: 50px;
+  }
+
+  .hero .caption h2.sub_cap{
+    font-size: 50px;
   }
 
 
@@ -510,8 +518,16 @@
   }
 
   .hero .caption{
-  	margin-top: 52px;
+  	margin-top: 8px;
     text-align: center;
+  }
+
+  .li-slide-berita {
+    width: 274px;
+  }
+
+  .flex-viewport{
+    margin-left: 6%;
   }
 
 
@@ -683,6 +699,10 @@
 
 }
 
+.flex-viewport{
+  overflow: hidden; position: relative;
+}
+
 
 .berita-terakhir{
     margin-top: 26px;
@@ -707,7 +727,7 @@
 }
 
 .li-slide-berita {
-  width: 320px;
+  width: 4%;
   margin-right: 0px;
   float: left;
   display: block;
